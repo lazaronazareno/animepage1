@@ -2,6 +2,7 @@ import React from 'react';
 
 import './styles.scss';
 import logo from '../../assets/animepagelogo.png';
+import search from '../../assets/lupa.svg';
 
 function Header() {
   return (
@@ -14,7 +15,7 @@ function Header() {
           <form className="form" action="/action_page.php">
             <input type="text" className="input" placeholder="Search Anime..." name="search" />
             <button className="button" type="submit">
-              a
+              <img className="button" src={search} type="submit" />
             </button>
           </form>
           <div>facebook</div>

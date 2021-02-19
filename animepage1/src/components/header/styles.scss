@@ -1,7 +1,7 @@
 .contenedor { 
     display: flex;
-    width: 100vw;
-    height: 20vh;
+    width: 70vw;
+    height: 12vh;
     background-color: orange;
 }
 
@@ -11,15 +11,14 @@
     width: 60vw;
     margin-left: 60px;
     align-items: center;
-    &:hover {
-        animation: rotate 1s linear;
-    }
 }
 
 .image {
     height: 100px;
     width: 200px;
-
+    &:hover {
+        animation: rotate 1s forwards;
+    }
 }
 
 .subcontenedor {
@@ -30,35 +29,36 @@
 
 .search {
     display: flex;
-    width: 100%;
     height: 60%;
     align-items: center;
     justify-content: center;
 }
 
 .form {
-    background: black;
+    background: white;
+    display: flex;
     width: 500px;
-    height: 40px;
+    height: 50px;
 }
 
 .input {
     border: none;
-    color: gray;
-    width: 475px;
+    color: black;
+    width: 450px;
+    padding: 0;
     background-color: inherit;
 }
 
 .button {
+    background-color: white;
+    align-self: center;
     border: none;
-    height: 40px;
+    height: 30px;
     cursor: pointer;
 }
 
 .section {
     display: flex;
-    width: 100%;
-    height: 100%;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -79,11 +79,11 @@
 }
 
 @keyframes rotate {
-    0% {
+    from {
         transform: rotate(0);
         transform-origin: bottom left;
     }
-    100% {
+    to {
         transform: rotate(-5deg);
         transform-origin: bottom left;
     }
